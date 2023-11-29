@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="PBOLat60">
+  <ClassDiagramComponents>
+    <Class name="Akatsuki" package="pkg22205009.pbo.lat60" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="pakaian" type="String" visibility="protected"/>
+        <Field name="tugas" type="String" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="pakaian"/>
+          <Argument type="String" name="tugas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPakaian" returnType="String" visibility="public"/>
+        <Method name="getTugas" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Anggota" package="pkg22205009.pbo.lat60" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="nama" type="String" visibility="private"/>
+        <Field name="asal" type="String" visibility="private"/>
+        <Field name="posisiCincin" type="String" visibility="private"/>
+        <Field name="ciriKhas" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nama"/>
+          <Argument type="String" name="asal"/>
+          <Argument type="String" name="posisiCincin"/>
+          <Argument type="String" name="ciriKhas"/>
+          <Argument type="String" name="pakaian"/>
+          <Argument type="String" name="tugas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNama" returnType="String" visibility="public"/>
+        <Method name="getAsal" returnType="String" visibility="public"/>
+        <Method name="getPosisiCincin" returnType="String" visibility="public"/>
+        <Method name="getCiriKhas" returnType="String" visibility="public"/>
+        <Method name="displayAnggota" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PBOLat60" package="pkg22205009.pbo.lat60" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="pkg22205009.pbo.lat60.Anggota" target="pkg22205009.pbo.lat60.Akatsuki"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
